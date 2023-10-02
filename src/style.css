@@ -60,3 +60,13 @@ footer {
                         "footer footer"
                         "header nav";
 }
+
+#basic-layout-4 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20rem 20rem;
+  grid-template-areas:  "main main main header"
+                        "footer footer footer nav";
+
+}
