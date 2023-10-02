@@ -108,3 +108,13 @@ footer {
   grid-template-areas:  "header header header"
                         "nav main footer";
 }
+
+#basic-layout-9 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 7rem 25rem 6rem;
+  grid-template-areas:  "header nav nav nav"
+                        "main main main main"
+                        "footer footer footer footer";
+}
