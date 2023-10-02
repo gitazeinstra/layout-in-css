@@ -79,3 +79,13 @@ footer {
                         "main nav"
                         "main footer";
 }
+
+#basic-layout-6 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 8rem 25rem;
+  grid-template-areas:  "header header header footer"
+                        "nav main main footer"
+                        "nav main main footer";
+}
