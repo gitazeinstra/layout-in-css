@@ -151,5 +151,36 @@ footer {
     transform: translateY(-5.2rem) rotate(30deg);
 }
 
+#advanced-layout-3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 50px;
+    margin: 20px;
+}
+
+#advanced-layout-3 main {
+    grid-column: 2 / 6;
+    grid-row: 1 / 12;
+}
+
+#advanced-layout-3 header {
+    grid-column: 1 / 4;
+    grid-row: 2 / 5;
+    z-index: 1;
+}
+
+#advanced-layout-3 nav {
+    grid-column: 1 / 4;
+    grid-row: 5 / 8;
+    z-index: 1;
+}
+
+#advanced-layout-3 footer {
+    grid-column: 1 / 4;
+    grid-row: 8 / 11;
+    z-index: 1;
+}
+
 
 
