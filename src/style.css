@@ -272,3 +272,38 @@ footer {
     grid-row: 6 / 11;
 }
 
+#advanced-layout-7 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+#advanced-layout-7 header {
+    grid-column: 10 / 13;
+    grid-row: 1 / 4;
+    z-index: 4;
+}
+
+#advanced-layout-7 header h1 {
+    font-size: 1em;
+}
+
+#advanced-layout-7 nav {
+    grid-column: 8 / 12;
+    grid-row: 3 / 7;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 3;
+}
+
+#advanced-layout-7 main {
+    grid-column: 2 / 10;
+    grid-row: 5 / 13;
+    z-index: 2;
+}
+
+#advanced-layout-7 footer {
+    grid-column: 1 / 5;
+    grid-row: 12 / 16;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 1;
+}
