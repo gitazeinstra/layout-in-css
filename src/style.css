@@ -242,3 +242,33 @@ footer {
     grid-row: 11 / 14;
     z-index: 2;
 }
+
+#advanced-layout-6 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+}
+
+#advanced-layout-6 header {
+    grid-column: 5 / 7;
+    grid-row: 3 / 8;
+    z-index: 2;
+}
+
+#advanced-layout-6 nav {
+    grid-column: 2 / 4;
+    grid-row: 5 / 10;
+    z-index: 2;
+}
+
+#advanced-layout-6 main {
+    grid-column: 1 / 8;
+    grid-row: 1 / 6;
+}
+
+#advanced-layout-6 footer {
+    grid-column: 1 / 8;
+    grid-row: 6 / 11;
+}
+
