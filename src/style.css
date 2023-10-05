@@ -36,7 +36,7 @@ footer {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 5rem 25rem 5rem;
+  grid-template-rows: 2fr 7fr 1fr;
   grid-template-areas:  "header header header header"
                         "nav main main main"
                         "footer footer footer footer";
@@ -45,7 +45,7 @@ footer {
 #basic-layout-2 {
   display: grid;
   gap: 10px;
-  grid-template-rows: 7rem 3rem 25rem 5rem;
+  grid-template-rows: 3fr 1fr 8fr 2fr;
   grid-template-areas:  "header"
                         "nav"
                         "main"
@@ -55,7 +55,7 @@ footer {
 #basic-layout-3 {
   display: grid;
   gap: 10px;
-  grid-template-rows: 27rem 6rem 6rem;
+  grid-template-rows: 4fr 1fr 1fr;
   grid-template-areas:  "main main"
                         "footer footer"
                         "header nav";
@@ -65,7 +65,7 @@ footer {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20rem 20rem;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:  "main main main header"
                         "footer footer footer nav";
 }
@@ -74,7 +74,7 @@ footer {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 8rem 30rem 5rem;
+  grid-template-rows: 2fr 6fr 1fr;
   grid-template-areas:  "header header"
                         "main nav"
                         "main footer";
@@ -83,18 +83,17 @@ footer {
 #basic-layout-6 {
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 8rem 25rem;
-  grid-template-areas:  "header header header footer"
-                        "nav main main footer"
-                        "nav main main footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:  "header header footer"
+                        "nav main footer";
 }
 
 #basic-layout-7 {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 8rem 25rem 6rem;
+  grid-template-rows: 2fr 6fr 1fr;
   grid-template-areas:  "nav header header"
                         "nav main main"
                         "nav  footer footer";
@@ -104,7 +103,7 @@ footer {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 8rem 25rem;
+  grid-template-rows: 1fr 3fr;
   grid-template-areas:  "header header header"
                         "nav main footer";
 }
@@ -113,7 +112,7 @@ footer {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 7rem 25rem 6rem;
+  grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas:  "header nav nav nav"
                         "main main main main"
                         "footer footer footer footer";
@@ -123,7 +122,7 @@ footer {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 6rem 6rem 6rem 6rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:  ". header header header"
                         "nav nav nav ."
                         ". main main main"
@@ -131,37 +130,47 @@ footer {
 }
 
 #advanced-layout-2 {
+    max-width: 30em;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 16.3rem 6em 6em 6em 6em;
+    grid-template-rows: repeat(7, 1fr);
     gap: 10px;
-    grid-template-areas:    "."
-                            "nav"
-                            "header"
-                            "main"
-                            "footer";
 }
 
 
-.advanced-header-2 {
-    transform: translateY(-11.5rem) rotate(-30deg);
+#advanced-layout-2 header {
+    transform: rotate(-30deg);
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
 }
 
-.advanced-nav-2 {
-    transform: translateY(-5.2rem) rotate(30deg);
+#advanced-layout-2 nav {
+    transform: rotate(30deg);
+    grid-column: 1 / 2;
+    grid-row: 3 / 4 ;
+}
+
+#advanced-layout-2 main {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7 ;
+}
+
+#advanced-layout-2 footer {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8 ;
 }
 
 #advanced-layout-3 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-    gap: 50px;
+    grid-template-rows: repeat(15, 1fr);
     margin: 20px;
 }
 
 #advanced-layout-3 main {
     grid-column: 2 / 6;
-    grid-row: 1 / 12;
+    grid-row: 1 / 16;
 }
 
 #advanced-layout-3 header {
@@ -172,13 +181,13 @@ footer {
 
 #advanced-layout-3 nav {
     grid-column: 1 / 4;
-    grid-row: 5 / 8;
+    grid-row: 7 / 10;
     z-index: 1;
 }
 
 #advanced-layout-3 footer {
     grid-column: 1 / 4;
-    grid-row: 8 / 11;
+    grid-row: 12 / 15;
     z-index: 1;
 }
 
