@@ -345,3 +345,45 @@ footer {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     z-index: 2;
 }
+
+#advanced-layout-9 {
+    max-width: 27em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+#advanced-layout-9 header {
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    border-radius: 50%;
+    z-index: 3;
+}
+#advanced-layout-9 header h1 {
+    font-size: 0.5em;
+    text-align: center;
+    margin-top: 5em;
+}
+
+#advanced-layout-9 nav {
+    grid-column: 6 / 11;
+    grid-row: 1 / 5;
+    border-radius: 50%;
+    padding: 2em;
+    z-index: 1;
+}
+
+#advanced-layout-9 main{
+    grid-column: 1 / 11;
+    grid-row: 3 / 10;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#advanced-layout-9 footer{
+    grid-column: 1 / 5;
+    grid-row: 8 / 11;
+    border-radius: 50%;
+    z-index: 2;
+}
